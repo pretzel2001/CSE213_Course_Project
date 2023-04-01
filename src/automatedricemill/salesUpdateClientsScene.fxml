@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="841.0" prefWidth="1067.0" style="-fx-background-color: #88CCF1;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="automatedricemill.SalesUpdateClientsSceneController">
+   <children>
+      <Text layoutX="282.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nobanno Automated Rice Mill Corporation">
+         <font>
+            <Font name="Gill Sans MT" size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="73.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Clients" wrappingWidth="126.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="72.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client/Business Name" wrappingWidth="150.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="73.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client ID" wrappingWidth="104.56640625">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="73.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client Representative" wrappingWidth="148.56640625">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="73.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Representative Contact Number" wrappingWidth="142.56640625">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="businessNameTextField" layoutX="296.0" layoutY="138.0" />
+      <Text layoutX="73.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Business Type" wrappingWidth="148.56640625">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="73.0" layoutY="416.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Website" wrappingWidth="148.56640625">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="73.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" wrappingWidth="148.56640625">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="564.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client Address" wrappingWidth="150.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="clientRepresentativeTextField" layoutX="296.0" layoutY="230.0" />
+      <TextField fx:id="representativeContactNumber" layoutX="296.0" layoutY="282.0" />
+      <TextField fx:id="wesbitetextField" layoutX="296.0" layoutY="398.0" prefHeight="25.0" prefWidth="223.0" />
+      <TextField fx:id="emailTextField" layoutX="296.0" layoutY="441.0" />
+      <Line endX="-100.0" endY="377.0" layoutX="649.0" layoutY="92.0" startX="-100.0" />
+      <Text layoutX="565.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City" wrappingWidth="104.56640625">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="565.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Road Number" wrappingWidth="104.56640625">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="565.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Building Number" wrappingWidth="148.56640625">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="565.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zip Code" wrappingWidth="104.56640625">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="zipCodeTextField" layoutX="698.0" layoutY="175.0" />
+      <TextField fx:id="buildingNumberTextField" layoutX="698.0" layoutY="222.0" />
+      <TextField fx:id="roadNumberTextField" layoutX="698.0" layoutY="266.0" />
+      <ComboBox fx:id="businessTypeComboBox" layoutX="296.0" layoutY="349.0" prefWidth="150.0" />
+      <ComboBox fx:id="cityComboBox" layoutX="698.0" layoutY="131.0" prefWidth="150.0" />
+      <Button layoutX="932.0" layoutY="788.0" mnemonicParsing="false" onAction="#logoutOnClick" prefHeight="37.0" prefWidth="87.0" style="-fx-background-color: FFFF;" text="Log Out">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="46.0" layoutY="788.0" mnemonicParsing="false" onAction="#returnToHomeOnClick" prefHeight="37.0" prefWidth="126.0" style="-fx-background-color: FFFF;" text="Return To Home">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="670.0" layoutY="405.0" mnemonicParsing="false" onAction="#updateInformationOnClick" prefHeight="37.0" prefWidth="143.0" style="-fx-background-color: FFFF;" text="Update Information">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="848.0" layoutY="405.0" mnemonicParsing="false" onAction="#viewIntableOnClick" prefHeight="37.0" prefWidth="113.0" style="-fx-background-color: FFFF;" text="View In Table">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <TableView fx:id="tableView" layoutX="45.0" layoutY="497.0" prefHeight="282.0" prefWidth="974.0">
+        <columns>
+          <TableColumn fx:id="tableViewName" prefWidth="119.0" text="Name" />
+          <TableColumn fx:id="tableViewId" prefWidth="71.0" text="ID" />
+            <TableColumn fx:id="tableViewClientRepresentative" prefWidth="154.0" text="Client Representative" />
+            <TableColumn fx:id="tableViewContactNumber" prefWidth="162.0" text="Contact Number" />
+            <TableColumn fx:id="tableViewBusinessType" prefWidth="160.0" text="Business Type" />
+            <TableColumn fx:id="tableViewEmail" prefWidth="145.0" text="Email" />
+            <TableColumn fx:id="tableViewWebsite" prefWidth="162.0" text="Website" />
+        </columns>
+      </TableView>
+      <Label fx:id="clientIdLabel" layoutX="327.0" layoutY="186.0" prefHeight="24.0" prefWidth="119.0" style="-fx-background-color: FFFF;" />
+      <Text layoutX="566.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Area name" wrappingWidth="104.56640625">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="areaNameTextField" layoutX="698.0" layoutY="310.0" />
+      <Text layoutX="296.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CUS" wrappingWidth="34.56640625">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
